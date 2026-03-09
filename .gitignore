@@ -1,0 +1,111 @@
+# =========================
+
+# Java / Maven
+
+# =========================
+
+target/
+build/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven wrapper
+
+.mvn/wrapper/maven-wrapper.jar
+
+# Compiled class files
+
+*.class
+
+# Logs
+
+*.log
+logs/
+
+# =========================
+
+# IDEs
+
+# =========================
+
+# IntelliJ
+
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+
+.vscode/
+
+# Eclipse
+
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# Environment variables
+
+# =========================
+
+.env
+.env.*
+
+# =========================
+
+# Docker
+
+# =========================
+
+docker-data/
+*.pid
+
+# =========================
+
+# Temporary files
+
+# =========================
+
+*.swp
+*.swo
+*~
+
+# =========================
+
+# Test output
+
+# =========================
+
+surefire-reports/
+failsafe-reports/
+
+# =========================
+
+# Coverage
+
+# =========================
+
+coverage/
+jacoco.exec

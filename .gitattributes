@@ -1,0 +1,5 @@
+# Normalizar line endings
+* text=auto
+
+# Scripts Windows (.cmd) devem usar CRLF
+*.cmd text eol=crlf
