@@ -28,4 +28,36 @@
         <Class name="com.di2it.ticket_service.web.TicketController"/>
         <Bug pattern="EI_EXPOSE_REP2"/>
     </Match>
+    <!-- EI_EXPOSE_REP2: false positive for Spring-injected MinIO client and config -->
+    <Match>
+        <Class name="com.di2it.file_service.infrastructure.storage.MinioObjectStorageAdapter"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <!-- EI_EXPOSE_REP2: false positive for Spring-injected use case dependencies -->
+    <Match>
+        <Class name="com.di2it.file_service.application.usecase.UploadFileUseCase"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <Match>
+        <Class name="com.di2it.file_service.application.usecase.GetFileDownloadUrlUseCase"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <!-- EI_EXPOSE_REP2: false positive for Spring-injected Kafka publisher -->
+    <Match>
+        <Class name="com.di2it.file_service.infrastructure.messaging.KafkaDocumentUploadedPublisher"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <!-- EI_EXPOSE_REP2: false positive for Spring-injected use case and WebSocket adapter -->
+    <Match>
+        <Class name="com.di2it.notification_service.application.usecase.ProcessTicketStatusChangedUseCase"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <Match>
+        <Class name="com.di2it.notification_service.application.usecase.ProcessDocumentUploadedUseCase"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <Match>
+        <Class name="com.di2it.notification_service.infrastructure.websocket.WebSocketPushNotificationAdapter"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
 </FindBugsFilter>
